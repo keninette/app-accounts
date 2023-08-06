@@ -4,7 +4,7 @@ import Tabs from "../../enums/Tabs";
 
 const Stack = createNativeStackNavigator();
 
-const Nav = (props) => {
+const Nav = ({expensesData, onExpensesDataChange}) => {
   return (
     <Stack.Navigator>
         { Tabs.map((tab) => {

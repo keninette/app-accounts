@@ -4,7 +4,7 @@ import menuStyles from "./menuStyles";
 import Tabs from "../../enums/Tabs";
 // We can access navigation object via context
 
-const Menu = (navigation) => {
+const Menu = ({navigation}) => {
   return (
     <View style={menuStyles.container}>
       { Tabs.map((tab) => {
